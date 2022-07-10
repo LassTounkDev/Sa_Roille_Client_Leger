@@ -1,0 +1,143 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing:border-box;
+}
+
+.container-nav{
+ width:100%;
+ display:flex;
+ flex-direction:column;
+ justify-content:space-around;
+ align-items:center;
+ align-content:center;
+ padding:10px;
+}
+
+.container-nav .navbar .logo{
+ width:215px;
+ height:100%;
+
+}
+.container-nav .logo img{
+ width:100%;
+ height:100%;
+ position:relative;
+ top:-70px;
+}
+.container-nav .navbar{
+ display:flex;
+ flex-direction:row;
+ justify-content:space-between;
+ align-items:center;
+ width:100%;
+ height:65px;
+ 
+}
+.container-nav .navbar .buttonNav ul{
+ 
+ display:flex;
+ flex-direction:row;
+ justify-content:space-around;
+ padding-right:10px;
+ text-align:center; 
+}
+.container-nav .navbar .buttonNav ul li a{
+ text-decoration:none;
+}
+.container-nav .navbar .buttonNav ul li{
+ list-style-type:none;
+ margin:20px;
+}
+.container-nav .navbar .buttonNav ul li i{
+ font-size:25px;
+ color:#c88a48;
+}
+
+.container-nav .logo{
+ width:20%;
+ height:100%;
+}
+.container-nav .menu {
+ width:100%;
+}
+.container-nav .menu ul{
+ display:flex;
+ flex-direction:row;
+ justify-content:center;
+ align-items:center;
+
+}
+.container-nav .menu ul li{
+ list-style-type:none;
+ margin:10px;
+ text-align:center;
+}
+.container-nav .menu ul li a{
+ text-decoration:none;
+ color:#c88a48;
+ cursor:pointer;
+ transition:0.7s;
+}
+.container-nav .menu ul li a:hover{
+ color:#FF5722;
+}
+
+.container-nav .BarreSearch{
+
+ width:30%;
+ height:100%;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ align-content:center;
+ 
+}
+.container-nav .BarreSearch input{
+ width:90%;
+ height:40%;
+ margin:5px;
+ border:1px solid #c88a48;
+ border-radius:10px;
+}
+.container-nav .BarreSearch i{
+ font-size:20px;
+ color:#c88a48;
+}
+
+.container-nav .sous-menu-1{
+ display: none;
+ border-radius:10px;
+ font-size:12px;
+ width:7%;
+ color:#fff;
+}
+
+.container-nav .sous-menu-1 ul li a{
+ color:#f39c12;
+}
+
+ .container-nav ul li:hover .sous-menu-1 {
+   display: block;
+    position: absolute;
+   background: #0000007d;
+   right:5px;
+   
+   }
+.container-nav ul li:hover .sous-menu-1 ul{
+   display: block;
+}
+.container-nav ul li:hover .sous-menu-1 ul li{
+   width: 100px;
+   border-bottom: 1px solid; #fff;
+   background: #5c453600;
+   border-radius:0;
+   text-align:center;
+
+}
+.container-nav ul li:hover .sous-menu-1 ul li:last-child{
+   border-bottom: none;
+}
+.container-nav ul li:hover .sous-menu-1 ul li a:hover{
+   color: #cd6133;
+}

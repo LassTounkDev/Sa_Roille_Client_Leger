@@ -1,0 +1,244 @@
+.ContainerHD {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    flex-direction: column;
+}
+
+.ContainerHD div {
+    width: 99%;
+    height: 100px;
+    margin: 5px;
+   
+}
+.ContainerHD .ContainerNav{
+    height: 10%;
+    color:black;
+    border-radius:10px;
+}
+.ContainerHD .ContainerNav .adminImg{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center; 
+    width:45%;
+}
+.ContainerHD .ContainerNav .adminImg div{
+    border: 1px solid black;
+    height:95%;
+    width:10%;
+    border-radius:50%;
+    margin:15px;
+}
+.ContainerHD .ContainerNav .logo{
+    width:10%;
+   height:90%;
+    display:grid;
+ justify-content:center;
+ align-items:flex-start;
+ align-content:flex-start;
+}
+.ContainerHD .ContainerNav .logo img{
+ width:100%;
+ height:100%;
+ position:relative;
+ top:-30px;
+}
+.ContainerHD .ContainerNav .profile{
+    width:10%;
+ background:red;
+ display:flex;
+ justify-content:center;
+ flex-dirextion:column;
+ align-items:center;
+ align-content:center;
+}
+
+
+.ContainerHD .sous-menu-1{
+    display: none;
+ border-radius:10px;
+ font-size:13px;
+ width:10%;
+ color:#fff;
+
+
+}
+
+
+ .ContainerHD ul li:hover .sous-menu-1 {
+    display: block;
+    position: absolute;
+    background: #0000007d;
+    margin-top:240px;
+   
+    }
+.ContainerHD ul li:hover .sous-menu-1 ul{
+    display: block;
+}
+.ContainerHD ul li:hover .sous-menu-1 ul li{
+    width: 120px;
+    padding: 10px;
+    border-bottom: 1px solid; #fff;
+    background: transparent;
+    border-radius:0;
+    text-align:center;
+
+}
+.ContainerHD ul li:hover .sous-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.ContainerHD ul li:hover .sous-menu-1 ul li a:hover{
+    color: #cd6133;
+}
+.ContainerHD .ContainerTbord{
+    height: 50%;
+}
+
+.ContainerHD .ContainerNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ContainerHD .ContainerNav div{
+    height:90%;
+   
+}
+.ContainerHD .ContainerTbord {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content:center;
+    align-items:center;
+    margin:5px;
+}
+.ContainerHD .ContainerTbord div{
+    width:20%;
+    height:70%;
+   border-radius: 10px;
+ display:flex;
+ justify-content:space-evenly;
+ flex-direction:column;
+ align-items:flex-start;
+ align-content:center;
+ color:#FFf;
+ font-weight:bold;
+ font-size:30px;
+ padding-left:5px;
+}
+.ContainerHD .ContainerTbord div i{
+ color:#FFF;
+ font-size:45px;
+}
+.ContainerHD .ContainerTbord .Tstock{
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='400' height='300' preserveAspectRatio='none' viewBox='0 0 400 300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask4498%26quot%3b)' fill='none'%3e%3crect width='400' height='300' x='0' y='0' fill='url(%23SvgjsLinearGradient4499)'%3e%3c/rect%3e%3cpath d='M239.062%2c396.113C271.138%2c398.755%2c303.12%2c379.676%2c316.765%2c350.527C329.003%2c324.385%2c312.712%2c296.435%2c297.085%2c272.166C283.195%2c250.596%2c264.683%2c231.181%2c239.062%2c229.857C211.204%2c228.418%2c182.749%2c240.961%2c169.636%2c265.582C157.111%2c289.099%2c168.247%2c315.802%2c180.759%2c339.326C194.413%2c364.998%2c210.083%2c393.726%2c239.062%2c396.113' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M259.129%2c133.087C270.499%2c133.005%2c280.954%2c126.878%2c286.591%2c117.004C292.18%2c107.213%2c291.809%2c95.296%2c286.323%2c85.447C280.677%2c75.31%2c270.721%2c67.189%2c259.129%2c67.695C248.159%2c68.174%2c241.172%2c78.102%2c235.76%2c87.656C230.454%2c97.023%2c226.047%2c107.832%2c230.971%2c117.405C236.238%2c127.645%2c247.614%2c133.17%2c259.129%2c133.087' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M334.945%2c365.173C358.074%2c364.689%2c374.671%2c345.904%2c386.54%2c326.047C398.832%2c305.482%2c408.762%2c281.27%2c397.841%2c259.946C386.147%2c237.112%2c360.547%2c223.668%2c334.945%2c225.302C311.59%2c226.793%2c295.67%2c246.572%2c284.572%2c267.176C274.183%2c286.464%2c269.458%2c308.8%2c279.474%2c328.285C290.354%2c349.452%2c311.15%2c365.67%2c334.945%2c365.173' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M109.985%2c87.541C128.034%2c88.524%2c147.576%2c86.465%2c158.046%2c71.73C170.092%2c54.776%2c173.788%2c31.127%2c162.463%2c13.683C151.791%2c-2.756%2c129.57%2c-3.057%2c109.985%2c-2.303C92.136%2c-1.616%2c72.96%2c1.981%2c64.064%2c17.47C55.193%2c32.916%2c60.449%2c52.046%2c70.212%2c66.944C78.983%2c80.328%2c94.007%2c86.67%2c109.985%2c87.541' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M115.434%2c200.789C144.527%2c202.086%2c169.974%2c182.208%2c183.979%2c156.675C197.445%2c132.126%2c195.888%2c102.968%2c182.614%2c78.314C168.536%2c52.167%2c145.116%2c30.271%2c115.434%2c29.368C84.373%2c28.423%2c54.287%2c46.012%2c40.777%2c73.997C28.563%2c99.297%2c42.461%2c126.793%2c56.716%2c151.002C70.671%2c174.703%2c87.957%2c199.564%2c115.434%2c200.789' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M299.734%2c265.104C320.169%2c264.373%2c338.235%2c253.4%2c349.041%2c236.041C360.578%2c217.508%2c366.841%2c194.034%2c355.639%2c175.297C344.643%2c156.905%2c321.162%2c153.602%2c299.734%2c153.571C278.233%2c153.54%2c255.232%2c157.086%2c243.548%2c175.135C230.994%2c194.529%2c231.678%2c220.204%2c243.915%2c239.8C255.513%2c258.371%2c277.853%2c265.886%2c299.734%2c265.104' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask4498'%3e%3crect width='400' height='300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='93.75%25' y1='-8.33%25' x2='6.25%25' y2='108.33%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient4499'%3e%3cstop stop-color='rgba(165%2c 94%2c 234%2c 1)' offset='0.66'%3e%3c/stop%3e%3cstop stop-color='rgba(178%2c 208%2c 227%2c 1)' offset='0.97'%3e%3c/stop%3e%3cstop stop-color='rgba(178%2c 208%2c 227%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+.ContainerHD .ContainerTbord .Tuser{
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='400' height='300' preserveAspectRatio='none' viewBox='0 0 400 300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask4496%26quot%3b)' fill='none'%3e%3crect width='400' height='300' x='0' y='0' fill='url(%23SvgjsLinearGradient4497)'%3e%3c/rect%3e%3cpath d='M239.062%2c396.113C271.138%2c398.755%2c303.12%2c379.676%2c316.765%2c350.527C329.003%2c324.385%2c312.712%2c296.435%2c297.085%2c272.166C283.195%2c250.596%2c264.683%2c231.181%2c239.062%2c229.857C211.204%2c228.418%2c182.749%2c240.961%2c169.636%2c265.582C157.111%2c289.099%2c168.247%2c315.802%2c180.759%2c339.326C194.413%2c364.998%2c210.083%2c393.726%2c239.062%2c396.113' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M259.129%2c133.087C270.499%2c133.005%2c280.954%2c126.878%2c286.591%2c117.004C292.18%2c107.213%2c291.809%2c95.296%2c286.323%2c85.447C280.677%2c75.31%2c270.721%2c67.189%2c259.129%2c67.695C248.159%2c68.174%2c241.172%2c78.102%2c235.76%2c87.656C230.454%2c97.023%2c226.047%2c107.832%2c230.971%2c117.405C236.238%2c127.645%2c247.614%2c133.17%2c259.129%2c133.087' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M334.945%2c365.173C358.074%2c364.689%2c374.671%2c345.904%2c386.54%2c326.047C398.832%2c305.482%2c408.762%2c281.27%2c397.841%2c259.946C386.147%2c237.112%2c360.547%2c223.668%2c334.945%2c225.302C311.59%2c226.793%2c295.67%2c246.572%2c284.572%2c267.176C274.183%2c286.464%2c269.458%2c308.8%2c279.474%2c328.285C290.354%2c349.452%2c311.15%2c365.67%2c334.945%2c365.173' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M109.985%2c87.541C128.034%2c88.524%2c147.576%2c86.465%2c158.046%2c71.73C170.092%2c54.776%2c173.788%2c31.127%2c162.463%2c13.683C151.791%2c-2.756%2c129.57%2c-3.057%2c109.985%2c-2.303C92.136%2c-1.616%2c72.96%2c1.981%2c64.064%2c17.47C55.193%2c32.916%2c60.449%2c52.046%2c70.212%2c66.944C78.983%2c80.328%2c94.007%2c86.67%2c109.985%2c87.541' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M115.434%2c200.789C144.527%2c202.086%2c169.974%2c182.208%2c183.979%2c156.675C197.445%2c132.126%2c195.888%2c102.968%2c182.614%2c78.314C168.536%2c52.167%2c145.116%2c30.271%2c115.434%2c29.368C84.373%2c28.423%2c54.287%2c46.012%2c40.777%2c73.997C28.563%2c99.297%2c42.461%2c126.793%2c56.716%2c151.002C70.671%2c174.703%2c87.957%2c199.564%2c115.434%2c200.789' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M299.734%2c265.104C320.169%2c264.373%2c338.235%2c253.4%2c349.041%2c236.041C360.578%2c217.508%2c366.841%2c194.034%2c355.639%2c175.297C344.643%2c156.905%2c321.162%2c153.602%2c299.734%2c153.571C278.233%2c153.54%2c255.232%2c157.086%2c243.548%2c175.135C230.994%2c194.529%2c231.678%2c220.204%2c243.915%2c239.8C255.513%2c258.371%2c277.853%2c265.886%2c299.734%2c265.104' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask4496'%3e%3crect width='400' height='300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='93.75%25' y1='-8.33%25' x2='6.25%25' y2='108.33%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient4497'%3e%3cstop stop-color='rgba(45%2c 152%2c 218%2c 1)' offset='0.66'%3e%3c/stop%3e%3cstop stop-color='rgba(178%2c 208%2c 227%2c 1)' offset='0.97'%3e%3c/stop%3e%3cstop stop-color='rgba(178%2c 208%2c 227%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+.ContainerHD .ContainerTbord .Tloc{
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='400' height='300' preserveAspectRatio='none' viewBox='0 0 400 300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2834%26quot%3b)' fill='none'%3e%3crect width='400' height='300' x='0' y='0' fill='url(%23SvgjsLinearGradient2835)'%3e%3c/rect%3e%3cpath d='M239.062%2c396.113C271.138%2c398.755%2c303.12%2c379.676%2c316.765%2c350.527C329.003%2c324.385%2c312.712%2c296.435%2c297.085%2c272.166C283.195%2c250.596%2c264.683%2c231.181%2c239.062%2c229.857C211.204%2c228.418%2c182.749%2c240.961%2c169.636%2c265.582C157.111%2c289.099%2c168.247%2c315.802%2c180.759%2c339.326C194.413%2c364.998%2c210.083%2c393.726%2c239.062%2c396.113' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M259.129%2c133.087C270.499%2c133.005%2c280.954%2c126.878%2c286.591%2c117.004C292.18%2c107.213%2c291.809%2c95.296%2c286.323%2c85.447C280.677%2c75.31%2c270.721%2c67.189%2c259.129%2c67.695C248.159%2c68.174%2c241.172%2c78.102%2c235.76%2c87.656C230.454%2c97.023%2c226.047%2c107.832%2c230.971%2c117.405C236.238%2c127.645%2c247.614%2c133.17%2c259.129%2c133.087' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M334.945%2c365.173C358.074%2c364.689%2c374.671%2c345.904%2c386.54%2c326.047C398.832%2c305.482%2c408.762%2c281.27%2c397.841%2c259.946C386.147%2c237.112%2c360.547%2c223.668%2c334.945%2c225.302C311.59%2c226.793%2c295.67%2c246.572%2c284.572%2c267.176C274.183%2c286.464%2c269.458%2c308.8%2c279.474%2c328.285C290.354%2c349.452%2c311.15%2c365.67%2c334.945%2c365.173' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M109.985%2c87.541C128.034%2c88.524%2c147.576%2c86.465%2c158.046%2c71.73C170.092%2c54.776%2c173.788%2c31.127%2c162.463%2c13.683C151.791%2c-2.756%2c129.57%2c-3.057%2c109.985%2c-2.303C92.136%2c-1.616%2c72.96%2c1.981%2c64.064%2c17.47C55.193%2c32.916%2c60.449%2c52.046%2c70.212%2c66.944C78.983%2c80.328%2c94.007%2c86.67%2c109.985%2c87.541' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M115.434%2c200.789C144.527%2c202.086%2c169.974%2c182.208%2c183.979%2c156.675C197.445%2c132.126%2c195.888%2c102.968%2c182.614%2c78.314C168.536%2c52.167%2c145.116%2c30.271%2c115.434%2c29.368C84.373%2c28.423%2c54.287%2c46.012%2c40.777%2c73.997C28.563%2c99.297%2c42.461%2c126.793%2c56.716%2c151.002C70.671%2c174.703%2c87.957%2c199.564%2c115.434%2c200.789' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M299.734%2c265.104C320.169%2c264.373%2c338.235%2c253.4%2c349.041%2c236.041C360.578%2c217.508%2c366.841%2c194.034%2c355.639%2c175.297C344.643%2c156.905%2c321.162%2c153.602%2c299.734%2c153.571C278.233%2c153.54%2c255.232%2c157.086%2c243.548%2c175.135C230.994%2c194.529%2c231.678%2c220.204%2c243.915%2c239.8C255.513%2c258.371%2c277.853%2c265.886%2c299.734%2c265.104' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2834'%3e%3crect width='400' height='300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='93.75%25' y1='-8.33%25' x2='6.25%25' y2='108.33%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2835'%3e%3cstop stop-color='rgba(255%2c 253%2c 0%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(253%2c 150%2c 68%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+.ContainerHD .ContainerTbord .Ttech{
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='400' height='300' preserveAspectRatio='none' viewBox='0 0 400 300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask4502%26quot%3b)' fill='none'%3e%3crect width='400' height='300' x='0' y='0' fill='url(%23SvgjsLinearGradient4503)'%3e%3c/rect%3e%3cpath d='M239.062%2c396.113C271.138%2c398.755%2c303.12%2c379.676%2c316.765%2c350.527C329.003%2c324.385%2c312.712%2c296.435%2c297.085%2c272.166C283.195%2c250.596%2c264.683%2c231.181%2c239.062%2c229.857C211.204%2c228.418%2c182.749%2c240.961%2c169.636%2c265.582C157.111%2c289.099%2c168.247%2c315.802%2c180.759%2c339.326C194.413%2c364.998%2c210.083%2c393.726%2c239.062%2c396.113' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M259.129%2c133.087C270.499%2c133.005%2c280.954%2c126.878%2c286.591%2c117.004C292.18%2c107.213%2c291.809%2c95.296%2c286.323%2c85.447C280.677%2c75.31%2c270.721%2c67.189%2c259.129%2c67.695C248.159%2c68.174%2c241.172%2c78.102%2c235.76%2c87.656C230.454%2c97.023%2c226.047%2c107.832%2c230.971%2c117.405C236.238%2c127.645%2c247.614%2c133.17%2c259.129%2c133.087' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M334.945%2c365.173C358.074%2c364.689%2c374.671%2c345.904%2c386.54%2c326.047C398.832%2c305.482%2c408.762%2c281.27%2c397.841%2c259.946C386.147%2c237.112%2c360.547%2c223.668%2c334.945%2c225.302C311.59%2c226.793%2c295.67%2c246.572%2c284.572%2c267.176C274.183%2c286.464%2c269.458%2c308.8%2c279.474%2c328.285C290.354%2c349.452%2c311.15%2c365.67%2c334.945%2c365.173' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M109.985%2c87.541C128.034%2c88.524%2c147.576%2c86.465%2c158.046%2c71.73C170.092%2c54.776%2c173.788%2c31.127%2c162.463%2c13.683C151.791%2c-2.756%2c129.57%2c-3.057%2c109.985%2c-2.303C92.136%2c-1.616%2c72.96%2c1.981%2c64.064%2c17.47C55.193%2c32.916%2c60.449%2c52.046%2c70.212%2c66.944C78.983%2c80.328%2c94.007%2c86.67%2c109.985%2c87.541' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M115.434%2c200.789C144.527%2c202.086%2c169.974%2c182.208%2c183.979%2c156.675C197.445%2c132.126%2c195.888%2c102.968%2c182.614%2c78.314C168.536%2c52.167%2c145.116%2c30.271%2c115.434%2c29.368C84.373%2c28.423%2c54.287%2c46.012%2c40.777%2c73.997C28.563%2c99.297%2c42.461%2c126.793%2c56.716%2c151.002C70.671%2c174.703%2c87.957%2c199.564%2c115.434%2c200.789' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M299.734%2c265.104C320.169%2c264.373%2c338.235%2c253.4%2c349.041%2c236.041C360.578%2c217.508%2c366.841%2c194.034%2c355.639%2c175.297C344.643%2c156.905%2c321.162%2c153.602%2c299.734%2c153.571C278.233%2c153.54%2c255.232%2c157.086%2c243.548%2c175.135C230.994%2c194.529%2c231.678%2c220.204%2c243.915%2c239.8C255.513%2c258.371%2c277.853%2c265.886%2c299.734%2c265.104' fill='rgba(255%2c 255%2c 255%2c 0.31)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask4502'%3e%3crect width='400' height='300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='93.75%25' y1='-8.33%25' x2='6.25%25' y2='108.33%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient4503'%3e%3cstop stop-color='rgba(119%2c 140%2c 163%2c 1)' offset='0.66'%3e%3c/stop%3e%3cstop stop-color='rgba(178%2c 208%2c 227%2c 1)' offset='0.97'%3e%3c/stop%3e%3cstop stop-color='rgba(178%2c 208%2c 227%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+.ContainerHD .ContainerControl{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+    height:10%;
+}
+.ContainerHD .ContainerControl div{
+    height:70%;
+    width:15%;     
+}
+
+
+.container-nav{
+ display:flex;
+ align-items: center;
+ align-content: center;
+ flex-direction: row;
+ flex-wrap: nowrap;
+justify-content: space-between;
+}
+
+
+.container-nav img{
+ width:15%;
+}
+
+.container-nav .navplus{
+ width:15%;
+ height:40%;
+ display:inline-flex;
+ justify-content:space-evenly;
+ align-items:center;
+ align-content:flex-end;
+  list-style-type:none;
+ text-decoration:none;
+ text-align:center;
+}
+.container-nav .navplus i{
+   font-size:30px;
+}
+.navplus a{
+  text-decoration:none;
+ color:#f39c12;
+}
+.navplus a:hover{
+ color:#cd6133;
+}
+.container-nav .admin{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ border-radius:10px;
+ width:30%;
+}
+
+.container-nav .admin h1{
+ font-size:30px;
+ color:#3F51B5;
+}
+form {
+ width:100%;
+ height:10%;
+
+}
+form table{
+ text-align:center;
+
+}
+
+form table,td{
+ height:100%;
+
+}
+form button{
+    width:100%;
+    height:100%;
+    border-radius:5px;
+    border:0.1px solid #fff;
+    cursor:pointer;
+}
+form  button{
+ background: linear-gradient(315deg, #ffffff, #ffffff);
+    box-shadow:  -2px -1px 4px #cac9c9,
+             3px 4px 5px #888888;
+ color:#3F51B5;
+ font-size:15px;
+ font-weight:bold;
+ cursor:pointer;
+ transition:0.9s
+}
+form button:hover{
+ color:#fff;
+ background:orange;
+}
